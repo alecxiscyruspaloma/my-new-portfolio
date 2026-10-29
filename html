@@ -3,26 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alecxis Cyrus Paloma | Portfolio</title>
-    <!-- Google Fonts -->
+    <title>My Portfolio | College Student</title>
+    
+    <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome Icons -->
+    
+    <!-- FontAwesome Icons for clean UI -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navigation Header -->
-    <header class="header">
+    <!-- 1. NAVIGATION BAR -->
+    <header class="navbar-header">
         <nav class="nav-container">
-            <a href="#home" class="logo">
-                <span>&lt;</span>Alecxis Cyrus<span>/&gt;</span>
-            </a>
+            <a href="#home" class="logo"><span>&lt;</span>Portfolio<span>/&gt;</span></a>
             
-            <ul class="nav-links">
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -30,219 +31,171 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
-            <!-- Mobile Menu Icon -->
-            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+            <!-- Mobile Menu Toggle Button -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </nav>
     </header>
 
-    <!-- Hero / Home Section -->
+    <!-- 2. HERO / HOME SECTION -->
     <section id="home" class="hero-section">
         <div class="hero-container">
-            <div class="hero-content">
-                <p class="hero-badge">
-                    <span class="pulse-dot"></span>
-                    COMPUTER ENGINEERING STUDENT
-                </p>
-                <h1>Hello, I'm <span class="highlight">Alecxis Cyrus</span></h1>
-                <h2>Aspiring Computer Engineer & Developer</h2>
-                <p class="hero-desc">
-                    I enjoy exploring computer systems, hardware-software integration, and web technologies. Building practical projects while continuously expanding my technical skills.
+            <div class="hero-text">
+                <span class="hero-badge">Welcome to my website</span>
+                <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
+                <h2>Aspiring Developer & College Student</h2>
+                <p>
+                    Passionate about building clean, responsive, and user-friendly web applications. Always eager to learn new technologies and solve creative challenges.
                 </p>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">
-                        View Projects <i class="fa-solid fa-arrow-down"></i>
-                    </a>
-                    <a href="#contact" class="btn btn-outline">
-                        Get In Touch
-                    </a>
+                    <a href="#projects" class="btn btn-primary">View Projects <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
                 </div>
             </div>
-
-            <!-- Interactive Student ID Visual -->
-            <div class="hero-visual">
-                <div class="student-id-wrapper" title="Colegio de Montalban ID">
-                    <div class="student-id-card">
-                        <div class="id-header">
-                            <div class="school-logo-placeholder">CdM</div>
-                            <div class="school-info">
-                                <h3>Colegio de Montalban</h3>
-                                <p>San Jose, Montalban, Rizal</p>
-                            </div>
-                        </div>
-                        <div class="id-photo-container">
-                            <img src="student-photo.jpg" alt="Alecxis Cyrus D. Paloma" onerror="this.src='https://via.placeholder.com/120x150?text=Photo'">
-                        </div>
-                        <div class="id-details">
-                            <h4 class="id-name">ALECXIS CYRUS D. PALOMA</h4>
-                            <p class="id-number">STUDENT NO: 26-11853</p>
-                            <p class="id-course">Bachelor of Science in Computer Engineering</p>
-                        </div>
-                        <div class="id-footer">
-                            <span>Official Student ID</span>
-                            <span class="id-location">RIZAL</span>
-                        </div>
-                    </div>
+            <div class="hero-image-box">
+                <div class="hero-card-visual">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Web Developer</h3>
+                    <p>Turning ideas into reality with code.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Me Section -->
+    <!-- 3. ABOUT ME SECTION -->
     <section id="about" class="section reveal">
         <div class="container">
             <div class="section-title">
-                <span class="section-tag">01. Discovery</span>
+                <span>01. Get to know me</span>
                 <h2>About Me</h2>
             </div>
-
             <div class="about-grid">
-                <div class="about-text">
+                <div class="about-content">
                     <p>
-                        Hello! My name is <strong>Alecxis Cyrus Paloma</strong>. I am an enthusiastic college student passionate about computer engineering, web development, and technology. My journey started with a curiosity for how computer systems and web applications work behind the scenes.
+                        Hello! I am an enthusiastic college student pursuing a degree in technology and software development. I enjoy exploring how things work behind the screen, from front-end design to fundamental programming concepts.
                     </p>
                     <p>
-                        I continuously expand my skills through coursework, personal projects, and practical coding. I believe in writing structured code and designing responsive web interfaces.
+                        My goal is to continuously grow my skills, collaborate on exciting projects, and build tools that provide genuine value to users.
                     </p>
                 </div>
-
-                <div class="about-cards">
-                    <div class="feature-card">
-                        <div class="feature-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-                        <h3>Education</h3>
-                        <p>Pursuing Bachelor of Science in Computer Engineering at Colegio de Montalban.</p>
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <h4>Education</h4>
+                        <p>College Student pursuing a tech-related degree.</p>
                     </div>
-
-                    <div class="feature-card">
-                        <div class="feature-icon"><i class="fa-solid fa-microchip"></i></div>
-                        <h3>Interests</h3>
-                        <p>Software Development, Embedded Systems, Hardware & Web Technologies.</p>
-                    </div>
-
-                    <div class="feature-card">
-                        <div class="feature-icon"><i class="fa-solid fa-bullseye"></i></div>
-                        <h3>Career Goals</h3>
-                        <p>To become a versatile engineer creating innovative and efficient technology solutions.</p>
+                    <div class="highlight-card">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h4>Passion</h4>
+                        <p>Web design, clean coding, and continuous learning.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- 4. SKILLS SECTION WITH SKILL CARDS -->
     <section id="skills" class="section bg-alt reveal">
         <div class="container">
             <div class="section-title">
-                <span class="section-tag">02. Capabilities</span>
-                <h2>My Technical Skills</h2>
+                <span>02. What I work with</span>
+                <h2>Skills & Technologies</h2>
             </div>
-
             <div class="skills-grid">
                 <div class="skill-card">
-                    <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+                    <i class="fa-brands fa-html5 skill-icon"></i>
                     <h3>HTML5</h3>
-                    <p>Semantic markup, accessible structure, and clean layout creation.</p>
+                    <p>Structuring web pages with modern, accessible, and semantic elements.</p>
                 </div>
-
                 <div class="skill-card">
-                    <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>
+                    <i class="fa-brands fa-css3-alt skill-icon"></i>
                     <h3>CSS3 & Styling</h3>
-                    <p>Flexbox, Grid layout, smooth animations, and responsive styling.</p>
+                    <p>Designing responsive layouts using Flexbox, Grid, and smooth effects.</p>
                 </div>
-
                 <div class="skill-card">
-                    <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+                    <i class="fa-brands fa-js skill-icon"></i>
                     <h3>JavaScript</h3>
-                    <p>ES6+ features, DOM manipulation, and dynamic user interactions.</p>
+                    <p>Adding interactivity, handling events, and managing dynamic content.</p>
                 </div>
-
                 <div class="skill-card">
-                    <div class="skill-icon"><i class="fa-solid fa-computer"></i></div>
-                    <h3>Computer Systems</h3>
-                    <p>Understanding computer architecture, hardware components, and logic concepts.</p>
+                    <i class="fa-solid fa-database skill-icon"></i>
+                    <h3>Database Basics</h3>
+                    <p>Understanding data management, tables, and basic queries.</p>
                 </div>
-
                 <div class="skill-card">
-                    <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
-                    <h3>Python Programming</h3>
-                    <p>Basic scripting, logic building, and problem-solving fundamentals.</p>
+                    <i class="fa-brands fa-python skill-icon"></i>
+                    <h3>Python</h3>
+                    <p>Writing scripts, building logic, and solving programming problems.</p>
                 </div>
-
                 <div class="skill-card">
-                    <div class="skill-icon"><i class="fa-brands fa-git-alt"></i></div>
+                    <i class="fa-brands fa-git-alt skill-icon"></i>
                     <h3>Git & GitHub</h3>
-                    <p>Version control management, code repositories, and project hosting.</p>
+                    <p>Tracking version control, managing code repositories, and hosting sites.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- 5. PROJECTS SECTION WITH PROJECT CARDS -->
     <section id="projects" class="section reveal">
         <div class="container">
             <div class="section-title">
-                <span class="section-tag">03. Portfolio Showcase</span>
+                <span>03. My recent work</span>
                 <h2>Featured Projects</h2>
             </div>
-
             <div class="projects-grid">
                 <article class="project-card">
-                    <div class="project-header-tag">
-                        <i class="fa-solid fa-window-maximize"></i>
-                        <span>Web App</span>
+                    <div class="project-img-placeholder">
+                        <i class="fa-solid fa-globe"></i>
                     </div>
-                    <div class="project-body">
-                        <h3>Personal Portfolio Website</h3>
-                        <p>A modern responsive portfolio featuring clean navigation, interactive elements, and an authentic Student ID Card display.</p>
+                    <div class="project-info">
+                        <h3>Personal Portfolio</h3>
+                        <p>A fully responsive personal portfolio website built with clean HTML, CSS, and interactive JavaScript features.</p>
                         <div class="project-tags">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>JavaScript</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
                         </div>
                         <div class="project-links">
-                            <a href="#home"><i class="fa-solid fa-globe"></i> Live Demo</a>
-                            <a href="https://github.com/alecxiscyruspaloma" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+                            <a href="#home"><i class="fa-solid fa-eye"></i> Live Demo</a>
+                            <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
                         </div>
                     </div>
                 </article>
 
                 <article class="project-card">
-                    <div class="project-header-tag">
-                        <i class="fa-solid fa-terminal"></i>
-                        <span>Console / Python</span>
+                    <div class="project-img-placeholder">
+                        <i class="fa-solid fa-calculator"></i>
                     </div>
-                    <div class="project-body">
-                        <h3>Student Information System</h3>
-                        <p>A Python application designed for managing student records, adding entries, viewing lists, and updating information.</p>
+                    <div class="project-info">
+                        <h3>Interactive Tool App</h3>
+                        <p>A functional utility web app designed to help students calculate grades or manage daily tasks efficiently.</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>UI Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#contact"><i class="fa-solid fa-eye"></i> Details</a>
+                            <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-img-placeholder">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Student Tracker System</h3>
+                        <p>A basic console or web application designed to store, organize, and track academic notes and project files.</p>
                         <div class="project-tags">
                             <span>Python</span>
-                            <span>CRUD</span>
-                            <span>Data Management</span>
+                            <span>Logic</span>
                         </div>
                         <div class="project-links">
-                            <a href="#contact"><i class="fa-solid fa-circle-info"></i> Details</a>
-                            <a href="https://github.com/alecxiscyruspaloma" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-header-tag">
-                        <i class="fa-solid fa-lightbulb"></i>
-                        <span>Concept</span>
-                    </div>
-                    <div class="project-body">
-                        <h3>Interactive Educational App</h3>
-                        <p>A web project concept focused on interactive learning through quizzes, visual feedback, and user engagement.</p>
-                        <div class="project-tags">
-                            <span>JavaScript</span>
-                            <span>UI/UX</span>
-                            <span>HTML/CSS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#contact"><i class="fa-solid fa-circle-info"></i> Details</a>
-                            <a href="https://github.com/alecxiscyruspaloma" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+                            <a href="#contact"><i class="fa-solid fa-eye"></i> Details</a>
+                            <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
                         </div>
                     </div>
                 </article>
@@ -250,43 +203,40 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- 6. CONTACT SECTION WITH A SIMPLE CONTACT FORM -->
     <section id="contact" class="section bg-alt reveal">
         <div class="container">
             <div class="section-title">
-                <span class="section-tag">04. Get In Touch</span>
+                <span>04. Let's connect</span>
                 <h2>Contact Me</h2>
             </div>
-
             <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="contact-details">
+                    <div class="contact-method">
+                        <i class="fa-solid fa-envelope"></i>
                         <div>
                             <h4>Email</h4>
-                            <a href="mailto:alecxiscyruspaloma@example.com">alecxiscyruspaloma@example.com</a>
+                            <p>your.email@example.com</p>
                         </div>
                     </div>
-
-                    <div class="contact-item">
-                        <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="contact-method">
+                        <i class="fa-solid fa-location-dot"></i>
                         <div>
                             <h4>Location</h4>
-                            <p>Montalban, Rizal, Philippines</p>
+                            <p>Philippines</p>
                         </div>
                     </div>
-
-                    <div class="contact-item">
-                        <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+                    <div class="contact-method">
+                        <i class="fa-brands fa-github"></i>
                         <div>
-                            <h4>GitHub Profile</h4>
-                            <a href="https://github.com/alecxiscyruspaloma" target="_blank" rel="noopener">github.com/alecxiscyruspaloma</a>
+                            <h4>GitHub</h4>
+                            <p>github.com/yourusername</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="contact-form-wrapper">
-                    <form id="contactForm" class="contact-form">
+                <div class="contact-form-box">
+                    <form id="contactForm">
                         <div class="form-group">
                             <label for="name">Your Name</label>
                             <input type="text" id="name" required placeholder="Enter your name">
@@ -297,31 +247,31 @@
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" rows="4" required placeholder="Write your message here..."></textarea>
+                            <textarea id="message" rows="4" required placeholder="Type your message here..."></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary btn-full">Send Message</button>
                     </form>
-                    <div id="formSuccess" class="form-success hidden">
-                        <i class="fa-solid fa-circle-check"></i> Message sent successfully! Thank you for reaching out.
+                    <div id="formSuccess" class="success-msg hidden">
+                        <i class="fa-solid fa-check-circle"></i> Message sent successfully! Thank you.
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- 7. FOOTER -->
     <footer class="footer">
-        <div class="container footer-content">
-            <div class="social-links">
-                <a href="https://github.com/alecxiscyruspaloma" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                <a href="#" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <div class="container footer-container">
+            <div class="footer-socials">
+                <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
             </div>
-            <p>&copy; <span id="currentYear"></span> Alecxis Cyrus Paloma. Built with Vanilla Web Tech.</p>
+            <p>&copy; <span id="year"></span> Your Name. Built with HTML, CSS, and JavaScript.</p>
         </div>
     </footer>
 
-    <!-- Custom JavaScript File -->
+    <!-- Custom JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
